@@ -1,0 +1,57 @@
+/* dark-theme.css */
+body {
+    background-color: #1C1C1C;
+    /* font-family: 'Inconsolata'; */
+    font-family: 'Times New Roman', sans-serif;
+    color: #FFFFFF;
+    accent-color: #ffa028
+}
+H1, .Heading{
+    /* font-family: 'Inconsolata'; */
+    color: #FFFFFF;
+}
+.Dropdown{
+    cursor: pointer;
+    max-width: fit-content;
+    /* border: 4px solid #ffa028; 
+    border-radius: 9px;          */
+}
+#ticker-search-dropdown, #timeline-dropdown{
+    min-width: 250px;
+    max-height: max-content;
+    color: #1C1C1C;   
+    font-size: 18px;
+    cursor:pointer;
+}
+
+
+.fixed-header {
+        position: sticky;
+        top: 0;
+        /* background-color: #f0f0f0; */
+        /* padding: 10px; */
+        z-index: 999; /* Ensure the header is above other content */
+}
+
+#card{
+    background-color: #22262f;
+    color: whitesmoke;
+    font-size: 1px;
+    font-weight: 500;
+    width: 1000px;
+    margin: auto;
+    /* text-align: center; */
+    border-spacing: 0
+}
+.cell1{
+    color: grey;
+    font-size: 19px;
+}
+tr {
+    border-bottom: 0.5px solid lightgray; /* Change this color to your desired color */
+    padding: 10;
+}
+td{
+    /* padding: 4px; */
+    width: 5px;
+}
