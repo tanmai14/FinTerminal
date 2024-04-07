@@ -1,0 +1,8 @@
+dash==2.0.0
+dash_mantine_components==0.12.1
+Flask==2.0.2
+numpy==1.24.4
+pandas==2.0.3
+plotly==5.3.1
+Requests==2.31.0
+websocket_client==1.6.1
