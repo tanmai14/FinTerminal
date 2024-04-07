@@ -13,11 +13,9 @@ import numpy as np
 import requests
 import json
 
+# KEY = "" Your Darqube API KEY here
 
-KEY = "57b189c7d4884cdc992fcc88f175c398"
-KEY = "ae4bda305e3244ebac1196bd1dfd158e"
-
-KEY_Alpha = "WA7IMVZJ6I6RNCDR"
+# KEY_Alpha = Your AlphaVantage Key Here
 
 f = pd.read_csv('./ticker - Copy.csv')
 data = np.array(f['ticker'])
@@ -191,7 +189,7 @@ def sec_call(ticker):
     global sec_d
     CIK = np.array(f[f['ticker'] == ticker]['CIK'])[0]
     res = requests.get("https://data.sec.gov/api/xbrl/companyfacts/{}.json".format(
-        'CIK'+str(str(CIK).zfill(10))), headers={'User-Agent': 'Tanmai saitanmai.r@gmail.com'})
+        # 'CIK'+str(str(CIK).zfill(10))), headers={'User-Agent': 'Name email'}) Include your name and email to access SEC data through EDGAR
     print(res)
     sec_d = res.json()['facts']['us-gaap']
     sec_lab = list(map(camel_case_to_title_case, list(sec_d.keys())))
